@@ -15,5 +15,5 @@ ON p.productLine = l.ProductLine;
 -- Question 3
 SELECT o.orderDate, o.shippedDate, o.`status`, o.customerNumber 
 FROM orders o 
-JOIN customers c 
+RIGHT JOIN customers c 
 ON c.customerNumber = o.customerNumber LIMIT 10;
